@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomePageCell" customModule="ATLMideTermProject_ZooApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singapore Zoo's world-famous exhibits offer many opportunities to experience the wonders of wildlife" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEJ-Iz-BRn">
+                        <rect key="frame" x="19.666666666666671" y="168" width="130" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="UWL-Qe-r8f"/>
+                            <constraint firstAttribute="width" constant="130" id="Xjr-xW-R8c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zoo5" translatesAutoresizingMaskIntoConstraints="NO" id="FBw-B3-PWr">
+                        <rect key="frame" x="20.666666666666671" y="20" width="128" height="138"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="138" id="gLI-3N-cEu"/>
+                            <constraint firstAttribute="width" constant="128" id="jNt-sr-mcQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFv-x6-T1u">
+                        <rect key="frame" x="30" y="156" width="109" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.18823529411764706" green="0.19215686274509802" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UEJ-Iz-BRn" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8AB-QX-W1i"/>
+                <constraint firstItem="XFv-x6-T1u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="A6d-U7-eQ4"/>
+                <constraint firstItem="UEJ-Iz-BRn" firstAttribute="top" secondItem="FBw-B3-PWr" secondAttribute="bottom" constant="10" id="B1A-j0-y0z"/>
+                <constraint firstAttribute="bottom" secondItem="XFv-x6-T1u" secondAttribute="bottom" constant="52" id="KfF-Ma-m6B"/>
+                <constraint firstItem="FBw-B3-PWr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Lr6-wA-hnQ"/>
+                <constraint firstItem="FBw-B3-PWr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="b3l-jr-2dX"/>
+                <constraint firstAttribute="trailing" secondItem="XFv-x6-T1u" secondAttribute="trailing" constant="30" id="dyQ-ym-JKA"/>
+            </constraints>
+            <size key="customSize" width="169" height="226"/>
+            <connections>
+                <outlet property="zooImage" destination="FBw-B3-PWr" id="27U-Qj-QwH"/>
+                <outlet property="zooInfoTex" destination="UEJ-Iz-BRn" id="nSR-rq-oDA"/>
+                <outlet property="zooName" destination="XFv-x6-T1u" id="OGo-9t-pze"/>
+            </connections>
+            <point key="canvasLocation" x="229.7709923664122" y="81.690140845070431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Zoo5" width="1500" height="1001"/>
+    </resources>
+</document>

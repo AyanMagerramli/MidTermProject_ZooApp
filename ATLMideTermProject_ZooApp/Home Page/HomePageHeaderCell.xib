@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomePageHeaderCell" customModule="ATLMideTermProject_ZooApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0j-SP-a8X">
+                        <rect key="frame" x="34" y="24.666666666666671" width="49" height="15"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBI-qx-Udd">
+                        <rect key="frame" x="0.0" y="58" width="117" height="6"/>
+                        <color key="backgroundColor" red="0.74509803921568629" green="0.87058823529411766" blue="0.38039215686274508" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="mm6-mh-axw"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="6" id="xk3-NT-ubk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.18823529411764706" green="0.19215686274509802" blue="0.1764705882352941" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h0j-SP-a8X" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dqd-R2-UFZ"/>
+                <constraint firstItem="h0j-SP-a8X" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="LhV-rb-B36"/>
+                <constraint firstAttribute="trailing" secondItem="bBI-qx-Udd" secondAttribute="trailing" id="ZXQ-JH-fSt"/>
+                <constraint firstAttribute="bottom" secondItem="bBI-qx-Udd" secondAttribute="bottom" id="c44-zO-I3A"/>
+                <constraint firstItem="bBI-qx-Udd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eCa-UZ-3Hv"/>
+                <constraint firstAttribute="trailing" secondItem="bBI-qx-Udd" secondAttribute="trailing" id="tH0-AT-Gf8"/>
+                <constraint firstItem="bBI-qx-Udd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zk5-tM-liF"/>
+            </constraints>
+            <size key="customSize" width="117" height="64"/>
+            <connections>
+                <outlet property="categoryLabel" destination="h0j-SP-a8X" id="l5k-9V-mqk"/>
+                <outlet property="didCellChooseView" destination="bBI-qx-Udd" id="Rxz-FZ-IgY"/>
+            </connections>
+            <point key="canvasLocation" x="188.54961832061068" y="24.647887323943664"/>
+        </collectionViewCell>
+    </objects>
+</document>
